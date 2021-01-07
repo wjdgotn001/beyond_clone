@@ -1,0 +1,66 @@
+#wrap { width:100%; height:auto; min-height:700px; background-color: #ddd; }
+
+#headBox { width:100%; height:auto; background-color:#ddd; }
+#viewBox { width:100%; height:auto; background-color:#333; }
+#sellerBox { width:100%; height:auto; background-color:#a9a9a9; }
+#beyond_lineBox { width:100%; height:auto; background-color:#d3d3d3; }
+#productBox { width:100%; height:auto; background-color:#dff; }
+#reviewBox { width:100%; height:auto; background-color:#666; }
+#noticeBox { width:100%; height:auto; background-color:#ddd; }
+#footBox { width:100%; height:auto; background-color:#a9a9a9; }
+
+
+/* design-460px */
+@media screen and (max-width:480px){
+
+#headBox { height:146px; background-color:#dfa; }
+#viewBox { height:480px; background-color: violet; }
+#sellerBox { height:364px; background-color: yellowgreen; }
+#beyond_lineBox { display:none; }
+#productBox { height:384px; background-color: aquamarine; }
+#pickBox { height:371px; background-color: darkkhaki; }
+#reviewBox { height:803px; background-color: #adf; }
+#noticeBox { display:none; }
+#utilBox { height:156px; background-color: cornflowerblue; }
+#footBox { height:241px; background-color: darkgoldenrod; }
+
+
+
+
+} 
+
+
+/* design-940px */
+@media screen and (min-width:481px) and (max-width:1024px){
+
+#headBox { height:146px; background-color:#dfa; }
+#viewBox { height:480px; background-color: violet; }
+#sellerBox { height:364px; background-color: yellowgreen; }
+#beyond_lineBox { display:none; }
+#productBox { height:384px; background-color: aquamarine; }
+#pickBox { height:371px; background-color: darkkhaki; }
+#reviewBox { height:803px; background-color: #adf; }
+#noticeBox { display:none; }
+#utilBox { height:156px; background-color: cornflowerblue; }
+#footBox { height:241px; background-color: darkgoldenrod; }
+
+
+}
+
+
+
+/* design-1420px */
+@media screen and (min-width:1025px){
+
+#headBox { max-width:1440px; margin:auto; height:156px; background-color:#dfa; }
+#viewBox { height:488px; background-color: violet; }
+#sellerBox { max-width:1440px; margin:auto; height:500px; background-color: yellowgreen; }
+#beyond_lineBox { max-width:1440px; margin:auto; height:900px; background-color: darkorange; }
+#productBox { max-width:1440px; margin:auto; height:491px; background-color: aquamarine; }
+#pickBox { max-width:1440px; margin:auto; height:491px; background-color: darkkhaki; }
+#reviewBox { max-width:1440px; margin:auto; height:300px; background-color: #adf; }
+#noticeBox { max-width:1440px; margin:auto; height:55px; background-color: darkslateblue; }
+#utilBox { display:none; }
+#footBox { max-width:1440px; margin:auto; height:190px; background-color: darkgoldenrod; }
+
+}

@@ -541,11 +541,7 @@ input { width:100%; height: 100%; }
 
 .gnbBox > ul > li > a { display:block; width: 100%; height: 100%; }
 
-<<<<<<< HEAD
 .product_menu { display:none; width:1152px; height:auto; box-shadow:3px 3px 11px #5a5a5a; background-color: #fff; }
-=======
-.product_menu { width:1152px; height:auto; background-color: burlywood; }
->>>>>>> 4777acfbf478a7b8f82b52e272080ea47c637734
 
 .tab { width:100%; height:56px; background-color: #faf8ef; }
 
@@ -556,7 +552,6 @@ input { width:100%; height: 100%; }
 
 .tab > li > a { display:block; width: 100%; height: 100%; }
 
-<<<<<<< HEAD
 /* category_area */
 .category_area { width:100%; height:496px; padding:30px 0 56px; box-sizing: border-box; }
 
@@ -596,20 +591,6 @@ input { width:100%; height: 100%; }
   font-size:13px; color:#807974; }
 
 .line_area .list > li > a { display:block; width: 100%; height: 100%; text-align: left; }
-
-
-=======
-.category_area { width:100%; height:496px; padding:30px 0 56px; box-sizing: border-box; background-color: cornflowerblue; }
-
-.category_area > ul { }
-.category_area > ul > li { }
-.category_area > ul > li > span { }
-
-.category_area .list { }
-.category_area .list > li { }
-.category_area .list > li > a { }
->>>>>>> 4777acfbf478a7b8f82b52e272080ea47c637734
-
 
 #viewBox { height:488px; background-color: violet; }
 #sellerBox { max-width:1440px; margin:auto; height:500px; background-color: yellowgreen; }

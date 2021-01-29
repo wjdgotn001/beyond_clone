@@ -1,0 +1,77 @@
+@media screen and (min-width:1025px){
+  /* sellerBox */
+#sellerBox { 
+  position: relative; max-width:1152px; height:auto;
+  margin:auto; margin-top:50px; }
+
+.seller_list { 
+  overflow: hidden; 
+  position: relative;
+  width:100%; max-width:1152px; height:410px; 
+  border:1px solid #e2e4e8; box-sizing: border-box; }
+
+.seller_btn { 
+  position: absolute; top:50%; left:0; 
+  z-index:900; width:100%; height:0; }
+
+.seller_btn > button { 
+  display:block; width:42px; height:57px; margin-top:-27px; 
+  border:1px solid #e2e4e8; background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: auto; }
+
+.next_btn { float:right; background-image: url(../../../img/content/pc/product_next.png); }
+.prev_btn { float: left; background-image: url(../../../img/content/pc/product_prev.png); }
+
+.seller_list > ul { width:2870px; height: 100%; }
+
+.seller_list > ul > li { 
+  position: relative; float: left; width:24.8vw; max-width:287px; height: 100%;}
+
+.seller_list a { display:block; width: 100%; height: 100%; }
+
+.seller_list > ul > li > a:hover::after,
+.seller_list > ul > li > a:focus::after {
+  content:" "; position: absolute; top:0; left:3px; width: 100%; height: 100%;   
+  border:2px solid #00aea1; box-sizing: border-box; }
+
+
+.seller_num { position: absolute; top:20px; left:20px; width:54px; height:54px; }
+
+.seller_num > span { 
+  display:block; width: 100%; height: 100%;
+  font-size:24px; font-style: italic; color:#fff; 
+  font-weight: bold; line-height:43px; text-align: center;
+  background: url(../../../img/content/pc/ico_rank.png) no-repeat 0 0; }
+
+.seller_img { width:100%; height:auto; }
+.seller_img  > img { width: 100%; height: 100%; }
+
+.seller_text { width: 100%; height:123px; text-align:center; padding:20px 10px 0 10px;  box-sizing: border-box; }
+
+.seller_text > em {
+  display:block; height:50px; font-style: normal; font-size: 16px;
+  font-weight: bold; color:#333; }
+
+.seller_text .price { display:inline-block; font-size:22px; font-weight: bold; color:#572600; }
+
+.seller_text .price > em { font-style:normal; font-size: 16px; color:#2c2c2c; }
+
+.seller_text > .sale_price { display:inline-block; font-size:22px; color:#572600; }
+
+.real { position: relative; font-size: 16px; color:#ababab; } 
+.real:after { 
+  display:block; content:" ";
+  position: absolute; top:50%; transform: translateY(-50%); left:0;
+  width:100%; height:1px; background-color:#ababab; } 
+
+.real > em, 
+.sale > em { font-style: normal; }
+
+.sale { font-size:22px; font-weight: bold; color:#572600; }
+
+.sale > em { font-size:16px; color:#2c2c2c; }
+
+
+}

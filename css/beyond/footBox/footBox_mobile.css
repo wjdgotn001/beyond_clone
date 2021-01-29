@@ -1,0 +1,73 @@
+@media screen and (max-width:480px){
+  /* footBox */
+#footBox { width: 100%; max-width:1152px; margin:auto; height:190px; }
+
+.foot_btn { width:100%; height:35px; padding:7px; box-sizing: border-box; background-color:#000; }
+
+.foot_btn > ul { width: 100%; height: 100%; }
+
+.foot_btn > ul > li { 
+  float: left; width:25%; height:100%; 
+  font-size:12px; font-weight:bold; line-height: 21px; text-align: center;
+  border-right:1px solid #262626; color:#fff; text-transform: uppercase; box-sizing: border-box; }
+.foot_btn > ul > li:last-child { border-right:0; }
+
+.foot_btn a { display:block; width: 100%; height: 100%; }
+
+.foot_area { width:100%; height:auto; padding:25px 15px 20px; box-sizing: border-box; }
+
+.service { width: 100%; height:45px; }
+
+.service > dl { float: left; width:70%; height:100%; }
+
+.service > dl > dt { width:100%; height:25px; margin-bottom:5px; }
+
+.service > dl > dt > em { 
+  width:50px; height:20px; font-weight: bold; padding:4px 5px; 
+  font-size:10px; font-style: normal; color:#333; border:1px solid #e1e1e1; border-radius:10px; }
+
+.service > dl > dt > span { display:inline-block; vertical-align: middle; font-size:20px; color:#333; }
+
+.service > dl > dd { width: 100%; height:15px; font-size:10px; color:#8d8d8d; }
+
+.service > ul { float: right; width:75px; height:100%; }
+
+.service > ul > li { 
+  float: left; width:35px; height: 35px; margin-right:5px; 
+  text-align: center; line-height:35px;
+  border:1px solid #e1e1e1; border-radius:100%; color:#8d8d8d; box-sizing: border-box; }
+
+.service > ul > li:last-child { margin-right:0; }  
+.service > ul > li:last-child { font-size: 13px; line-height:32px; }  
+
+.service > ul > li:first-child a:after { 
+  content:" "; display:inline-block; width:16px; height:16px; 
+  background: url(../../../img/ico_commin.png) no-repeat;
+  background-size: 500px 500px !important;
+  background-position: -145px -125px !important; }
+
+.service a { display:block; width: 100%; height: 100%; }
+
+.foot_con { width: 100%; height:auto; }
+
+.foot_con > h2 {
+  width:85px; height:17px; margin-top:20px; margin-bottom:10px;
+  background-image: url(../../../img/content/mobile&tablet/footerLogo.png);
+  background-position:50% 50%;
+  background-repeat:no-repeat;
+  background-size: contain; }
+
+.foot_con > p { font-size:10px; color:#8d8d8d; margin-top:10px; line-height:17px; }
+
+.foot_agree { width: 100%; height:35px; padding:0 15px 10px; box-sizing: border-box; }
+
+.foot_agree > ul { width: 100%; height: 100%; }
+
+.foot_agree > ul > li { float: left; width:auto; height:100%; font-size:10px; font-weight: bold; color:#3d322d; }
+.foot_agree > ul > li:last-child { color:#8d8d8d; }
+
+.foot_agree a { display:block; width: 100%; height: 100%; text-align: center; padding:5px 10px; box-sizing: border-box; }
+
+  
+
+}

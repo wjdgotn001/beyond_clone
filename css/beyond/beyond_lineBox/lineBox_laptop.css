@@ -1,0 +1,41 @@
+@media screen and (min-width:1025px){
+  /* lineBox */
+#lineBox { max-width:1152px; margin:auto; height:1080px; }
+
+.beyond_line_area { width: 100%; height:890px; }
+
+.beyond_line_area > ul { width: 100%; height: 100%; }
+
+.beyond_line_area > ul > li { float: left; width:48.1vw; max-width:557px; height: 100%; margin-right:38px; }
+.beyond_line_area > ul > li:last-child { margin-right:0; }
+
+.beyond_line_area .skin_bg { width:100%; height:219px; }
+
+.skin_bg > img { width: 100%; height: 100%; object-fit: cover; object-position: left; }
+
+.skin > ul { width: 100%; height:62vw; max-height:690px; }
+
+.beyond_line_area .clean_bg { width: 100%; height:219px; }
+
+.clean_bg > img { width: 100%; height: 100%; object-fit: cover; object-position: left; }
+
+.clean > ul { width: 100%; height:62vw; max-height:690px;  }
+
+/* 공통 */
+.list > li { float: left; width:50%; height:50%; }
+
+.list > li > a { display:block; width: 100%; height: 100%; }
+
+.list .img { width: 100%; height:auto; }
+
+.list .img > img { width: 100%; height: auto;}
+
+.list .text { width:100%; height:auto; text-align: center; padding:10px; box-sizing: border-box; }
+
+.text > em { display:block; font-size:15px; font-style:normal; font-weight: bold; }
+
+.text > .price { display:inline-block; font-size:16px; color:#572600; font-weight:bold; }
+
+.text > .price > em { font-size:16px; font-style:normal; color:#2c2c2c; }
+
+}

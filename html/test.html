@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+    * {margin: 0; padding: 0; border: 0; list-style: none;}
+
+    .tab_list {width: 600px; height: auto; padding: 1rem;}
+
+    .tab_list > ul {width:auto; height:auto; background-color: #acf; padding:1rem;}
+
+    .tab_list > ul::after {content:""; display: block; clear:both;}
+
+    .tab_list ul>li { 
+      list-style: none; margin-bottom:2rem; 
+      border-bottom:1px solid #333; padding-bottom:1rem;}
+
+    .tab_list ul>li:last-child { margin-bottom: 0; }
+
+    .tab_list dt { 
+      width: 100%; height: 50px; background-color: #fff; 
+      text-indent: 1rem; font-size: 1.3rem; line-height: 50px; 
+      font-weight: bold; cursor: pointer;}
+
+    .tab_list dd {
+      display: none; 
+      width: 100%; height: 70px; padding:0.5rem; box-sizing: border-box;}
+
+    .tab_list ul>li button {
+      float:left; 
+      width:49%; cursor: pointer; 
+      padding: 1rem; background-color: #fac; font-size: 1.2rem;}
+
+    .tab_list ul>li button:last-child {float:right;}
+
+    .tab_list ul>li button.action { 
+      background-color: #05f; color:#fff; font-weight: bold;}
+
+    .list {
+      display: none; 
+      width: 100%; height: 500px; background-color: #fff; 
+      margin-top: 0.3rem; padding:1rem ; box-sizing:border-box; border-radius:0.5rem;}
+
+    ol>li{padding:0.3rem; border-bottom:1px solid #acc;}
+
+  </style>
+</head>
+<body>
+  <div class="tab_list">
+    <ul>
+      <li>
+        <dl class="btn">
+          <dt>title</dt>
+          <dd>
+            <button class="action" type="button">first</button>
+            <button type="button">second</button>
+          </dd>
+        </dl>
+        
+        <ol class="list"></ol>
+      </li>
+      <li>
+        <dl class="btn">
+          <dt>title</dt>
+          <dd>
+            <button type="button">first</button>
+          <button type="button">second</button>
+          </dd>
+        </dl>
+        
+        <ol class="list"></ol>
+      </li>
+      <li>
+        <dl class="btn">
+          <dt>title</dt>
+          <dd>
+            <button type="button">first</button>
+          <button type="button">second</button>
+          </dd>
+        </dl>
+        
+        <ol class="list"></ol>
+      </li>
+    </ul>
+  </div>
+
+  
+  <script src="http://unpkg.com/jquery"></script>
+  <script src="http://unpkg.com/jquery-ui"></script>
+  <script>
+    (function($){
+  var arr = [
+    {'title': "one"  ,
+      "sub": [
+      [
+      {'category':'01_americano'},
+      {'category':'01_latte'},
+      {'category':'01_moca   choco'},
+      {'category':'01_vanila latte'},
+      {'category':'01_orange juice'},
+      {'category':'01_grape  juice'},
+      {'category':'01_kiwi   yogurte'},
+      {'category':'01_grape  yogurte'},
+      {'category':'01_other'}
+      ], 
+
+      [
+      {'line':'01_americano'},
+      {'line':'01_latte'},
+      {'line':'01_moca   choco'},
+      {'line':'01_vanila latte'},
+      {'line':'01_orange juice'},
+      {'line':'01_grape  juice'},
+      {'line':'01_kiwi   yogurte'},
+      {'line':'01_grape  yogurte'},
+      {'line':'01_cookie'},
+      {'line':'01_others'}
+      ] 
+  ]},
+    {'title': "two"  ,
+    "sub":[
+      [
+      {'category':'02_americano'},
+      {'category':'02_latte'},
+      {'category':'02_moca   choco'},
+      {'category':'02_vanila latte'},
+      {'category':'02_orange juice'},
+      {'category':'02_grape  juice'},
+      {'category':'02_kiwi   yogurte'},
+      {'category':'02_other'}
+      ],
+      
+      [
+      {'line':'02_americano'},
+      {'line':'02_latte'},
+      {'line':'02_moca   choco'},
+      {'line':'02_vanila latte'},
+      {'line':'02_orange juice'},
+      {'line':'02_grape  juice'},
+      {'line':'02_kiwi   yogurte'},
+      {'line':'02_grape  yogurte'},
+      {'line':'02_cookie'}
+      ]
+    ]},
+    {'title': "three",
+    "sub":[
+      [
+      {'category':'03_americano'},
+      {'category':'03_latte'},
+      {'category':'03_moca   choco'},
+      {'category':'03_vanila latte'},
+      {'category':'03_orange juice'},
+      {'category':'03_grape  juice'},
+      {'category':'03_kiwi   yogurte'},
+      {'category':'03_grape  yogurte'},
+      {'category':'03_cookie'},
+      {'category':'03_bread'}
+      ],
+
+      [
+      {'line':'03_americano'},
+      {'line':'03_latte'},
+      {'line':'03_moca   choco'},
+      {'line':'03_vanila latte'},
+      {'line':'03_orange juice'},
+      {'line':'03_grape  juice'},
+      {'line':'03_kiwi   yogurte'},
+      {'line':'03_grape  yogurte'},
+      {'line':'03_cookie'}
+     ]
+    ]}
+  ];
+var li = $('li');
+var list, subC, i, j, sublenCon;
+
+var CateArrayFn = function(i){
+  var subLen = arr[i].sub[0].length;
+  // console.log(subLen);
+  list = li.eq(i).find('.list');
+  list.empty();
+  
+  for(var j=0; j<subLen; j++){
+    subLenCon = arr[i].sub[0][j];
+
+    list.append('<li>'+ subLenCon.category+'</li>');
+    // console.log(subLenCon);
+    }
+}
+
+var LineArrayFn = function(i){
+  var subLen = arr[i].sub[1].length;
+  // console.log(subLen);
+  list = li.eq(i).find('.list');
+  list.empty();
+  
+  for(var j=0; j < subLen; j++){
+    subLenCon = arr[i].sub[1][j];
+
+    list.append('<li>'+ subLenCon.line +'</li>');
+    // console.log(arr[i].sub[1]);
+    }
+}
+// ---------------------------------------------
+
+$.each(arr, function(i,d){
+  li.eq(i).find('dt').text( arr[i].title);
+  // li.eq(i).find('.list').text( arr[i].sub.content );
+  list = li.eq(i).find('.list');
+  var sub = arr[i].sub;
+  CateArrayFn(i);
+});
+
+$('dt').on('click', function(e){
+  e.preventDefault();
+  var thisI = $(this).parents('li').index();
+  li.eq(thisI).find('.list').show();
+  li.eq(thisI).find('dd').show();
+  li.eq(thisI).siblings().find('.list').hide();
+  li.eq(thisI).siblings().find('dd').hide();
+  li.eq(thisI).find('button').eq(0).addClass('action');
+  li.eq(thisI).siblings().find('button').removeClass('action');
+  li.eq(thisI).find('button').eq(1).removeClass('action');
+});
+
+  $('button').on('click', function(e){
+    e.preventDefault();
+    var __this = $(this);
+    var liI = __this.parents('li').index();
+    var btnI = __this.index();
+    // console.log(liI,  btnI ); 
+    $(this).addClass('action');
+    $(this).siblings().removeClass('action');
+
+    // console.log(btnI);
+
+    if(btnI === 0){
+      CateArrayFn(liI);      
+    }else{
+      LineArrayFn(liI);
+    }
+    
+  }); 
+})(jQuery);
+  </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+@media screen and (min-width:1025px){
+  /* noticeBox */
+#noticeBox { 
+  width: 100%; max-width:1152px; height:55px; margin:auto;
+  border-top: 2px solid #572600; border-bottom: 1px solid #f1f1f1; }
+
+#noticeBox > h2 { 
+  float: left; width:20%; height: 100%; 
+  padding:0; text-transform: capitalize; text-indent: 10px; line-height:55px;
+  font-size:18px; color:#2c2c2c; font-weight: normal; }
+
+#noticeBox > ul { float: right; width:80%; height: 100%; }
+
+#noticeBox > ul > li { float: left; width:50%; height:100%; line-height: 55px; }
+
+#noticeBox a { float: left; width:75%; height:100%; }
+
+#noticeBox a > span { font-size:15px; color:#572600; }
+
+.date { float: right; width:25%; height: 100%; }
+
+.date > span { font-size:15px; color:#807974; }
+
+  
+  
+
+
+}

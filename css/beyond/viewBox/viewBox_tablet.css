@@ -1,0 +1,28 @@
+@media screen and (min-width:481px) and (max-width:1024px){
+  /* viewBox */
+#viewBox { position: relative; height:auto; }
+
+.view_indicator {
+  position: absolute; bottom:20px; left:50%; z-index: 100; transform: translateX(-50%);
+  width:144px; height:10px; }
+
+.view_indicator > ul { width: 100%; height: 100%; }
+.view_indicator > ul > li { 
+  float: left; 
+  margin:0 3px; width:10px; height:10px; 
+  border-radius: 100%; background-color: #cdcfcf; }
+.view_indicator a { display:block; width: 100%; height: 100%; }
+
+.view_indicator > ul > li.action { background-color:#38a3a1; }
+
+.view_area { position: relative; overflow: hidden; width:100%; height:100%; }
+
+.view_area > ul { width:900%; height: 100%; }
+
+.view_area > ul > li { 
+  float: left; width:11.111111%; height:100%; text-align: center; }
+
+.view_area img { max-width:100%; height:auto; }
+
+
+}

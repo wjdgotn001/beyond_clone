@@ -82,29 +82,12 @@ h1 {
 
 .open_area { width: 100%; height:auto; background-color: #fff; }
 
-.open_area > .tab { width:100%; height:36px; background-color:#f0f0f0;  }
-
-.tab > li { 
-  float: left; width:50%; height:100%; color:#8c8c8c; line-height: 36px;
-  font-size:13px; font-weight: bold; text-align: center;}
-
-.tab > li.on { background-color:#99d7db; color:#3b3b3b; }
-
-.tab a { display:block; width: 100%; height: 100%; }
-
 .category { width: 100%; height:auto; padding:20px; color:#585858; box-sizing: border-box; }
 
 .categort > ul { width: 100%; height: 100%; }
 
 .category > ul > li { width: 100%; height:auto; font-size:13px; color:#585858; margin-bottom:10px; font-weight: bold; }
 .category a { display:block; width: 100%; height: 100%;  padding:8px; box-sizing: border-box; }
-
-.line { display:none; width: 100%; height:auto; padding:20px; color:#585858; box-sizing: border-box; }
-
-.line > ul { width: 100%; height: 100%; }
-
-.line > ul > li { width: 100%; height:auto; font-size:13px; color:#585858; margin-bottom:10px; font-weight: bold;; }
-.line a { display:block; width: 100%; height: 100%;  padding:8px; box-sizing: border-box; }
 
 .icon_menu { width:100%; height:219px; background-color:#f0f0f0; }
 

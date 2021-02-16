@@ -1,5 +1,10 @@
 (function($){
 
+
+setTimeout(function(){
+  $('.roding').remove();
+},1000);
+
 var categoryCon = [
   { 'title':{'name':'스킨케어','link':'beyond.html','target':'_blank'},
     'subContent':[

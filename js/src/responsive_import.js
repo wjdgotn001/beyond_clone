@@ -6,6 +6,7 @@
   var deviceType = ['mobile', 'tablet', 'pc', 'pcfull'];
 
   var pcUrl = './pc/';
+  var mbUrl = './';
   var headBox = $('#headBox');
   var viewBox = $('#viewBox');
   var sellerBox = $('#sellerBox');
@@ -36,17 +37,17 @@
 
   //file separation
   if(nowW === deviceType[0]){
-    headImport();
+    headBox.load( mbUrl + 'mb_headBox.html', headImport );
     viewImport();
   
 
   }else if(nowW === deviceType[1]){
-    headImport();
+    headBox.load( mbUrl + 'mb_headBox.html', headImport );
     viewImport();
 
   }
   else{
-    headBox.load( pcUrl + 'pc_headBox.html', headPcImport );
+    headPcImport();
     viewBox.load( pcUrl + 'pc_viewBox.html', viewPcImport );
     sellerBox.load( pcUrl + 'pc_sellerBox.html', sellerPcImport );
     $('#sellerBox').after('<div id="lineBox"></div>');

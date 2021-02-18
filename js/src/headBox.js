@@ -4,33 +4,29 @@
   var gnbWrap = $('.gnb_wrap');
   var gnbBtn = gnbWrap.children('.gnb_btn');
   var gnbOpenBtn = gnbBtn.children('.gnb_open_btn');
-  var gnbBg = gnbBtn.children('.gnbBg');
-  var gnbBox = gnbBtn.children('.gnbBox');
-  var gnbCloseBtn = gnbBox.children('.gnb_close_btn');
+  var gnbArea = gnbBtn.find('.gnbArea');
+  var gnbBox = gnbArea.children('.gnbBox');
+  var gnbCloseBtn = gnbArea.children('.gnb_close_btn');
 // gnbBox
-  gnbBox.hide();
-  gnbBg.hide();
+  gnbArea.hide();
 
   gnbOpenBtn.on('click',function(e){
     e.preventDefault();
 
-    var gnbDisplay = gnbBox.css('display');
+    var gnbDisplay = gnbArea.css('display');
 
     if(gnbDisplay === 'none'){
-      gnbBox.stop().fadeIn();
-      gnbBg.stop().fadeIn();
+      gnbArea.stop().fadeIn();
       
     }else{
-      gnbBox.stop().fadeOut();
-      gnbBg.stop().fadeOut();
+      gnbArea.stop().fadeOut();
     }
   });
 
   gnbCloseBtn.on('click',function(e){
     e.preventDefault();
 
-    gnbBox.stop().fadeOut();
-    gnbBg.stop().fadeOut();
+    gnbArea.stop().fadeOut();
   });
 
 
@@ -156,7 +152,7 @@ var arr = [
 // code_list===============================================================
 var gnbContentList = '<div class="open_area"><div class="category"><ul></ul></div></div>';
 
-var openMenu = gnbBox.children('.open_menu');
+var openMenu = gnbBox.find('.open_menu');
 var openMenuUl = openMenu.children('ul');
 
 var arrLen = arr.length;
